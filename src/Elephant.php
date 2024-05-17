@@ -1,7 +1,7 @@
 <?php
 namespace App;
-abstract class Elephant extends Mammal {
-public float $tuskLength;
+class Elephant extends Mammal {
+private float $tuskLength;
 public function __construct(string $name, int $age, float $wingSpan, float $tuskLength) {
     parent::__construct($name, $age, $wingSpan,);
     $this->tuskLength = $tuskLength;
